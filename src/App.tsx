@@ -21,6 +21,8 @@ const [completedTodos, setCompletedTodos] = useState<Todo[]>([])
     setTodo("");
   }
   };
+
+// handle drag and drop
 const onDragEnd = (result: DropResult) =>{
 const {source, destination}= result;
 console.log(result);
